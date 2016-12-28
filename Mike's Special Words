@@ -32,16 +32,16 @@ for element in myList:
         element2=element[middle:]
         for ch in element1:
             if ch not in element2:
-                ctr1 += 1
+                ctr += 1
             else:
                 element2 = element2.replace(ch, '', 1)
                 
         for ch in element2:
             if ch not in element1:
-                ctr1 += 1
+                ctr += 1
             else:
                 element1 = element1.replace(ch, '', 1)
-        if ctr1 != 0:
+        if ctr != 0:
             print("NO")
         else:
             print("YES")
