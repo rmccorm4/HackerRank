@@ -1,7 +1,7 @@
 def ransom_note(magazine, ransom):
     #dictionary is O(1) because you can just access value using key immediately
     myMagazine = {word: 0 for word in magazine}
-    
+
     for word in magazine:
         myMagazine[word] += 1
     
